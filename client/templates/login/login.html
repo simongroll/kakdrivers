@@ -1,0 +1,23 @@
+<template name="login">
+{{#contentFor "headerButtonLeft"}}
+  {{>ionNavBackButton path="index"}}
+{{/contentFor}}
+
+{{#contentFor "headerTitle"}}
+  <h1 class="title">Login</h1>
+{{/contentFor}}
+
+{{#ionView}}
+  {{#ionContent}}
+    <!-- {{>loginButtons}} -->
+    <div class="padding">
+<!--     <button class="button button-outline button-calm button-block icon-left ionicons ion-social-twitter-outline" id="login-twitter">
+      Login with Twitter
+    </button> -->
+    <button class="button button-outline button-calm button-block" id="login-twitter">{{> ionIcon icon="social-twitter-outline"}}Login with Twitter</button>
+    </div>
+    <!-- {{>atForm}} -->
+  {{/ionContent}}
+{{/ionView}}
+
+</template>

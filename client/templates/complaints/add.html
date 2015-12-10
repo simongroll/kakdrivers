@@ -1,0 +1,15 @@
+<template name="add">
+  {{#contentFor "headerButtonLeft"}}
+    {{>ionNavBackButton path="index"}}
+  {{/contentFor}}
+
+  {{#contentFor "headerTitle"}}
+    <h1 class="title">Complaints</h1>
+  {{/contentFor}}
+
+  {{#ionView}}
+    {{#ionContent}}
+      {{> quickForm collection="Complaints" doc=complaint id="add-form" type="insert" buttonContent="Save"}}
+    {{/ionContent}}
+  {{/ionView}}
+</template>
