@@ -58,7 +58,8 @@ Router.map(function() {
             }
         },
         waitOn: function() {
-            Meteor.subscribe("userProfile", Meteor.userId());
+            [Accounts.loginServicesConfigured(),
+            Meteor.subscribe("userProfile", Meteor.userId())];
         }
     });
 
