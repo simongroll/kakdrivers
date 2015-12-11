@@ -1,0 +1,9 @@
+skygreen: #c3e5e6
+skyblue: #d5eff5
+buildingsgrey: #acc1c3
+carorange: #e57b23
+carred: #df4f3b
+windowbluelight: #c3e7f2
+windowbluedark: #9bd7eb
+greyroad: #7d7d7d
+greyroadshadow: #8397ac
