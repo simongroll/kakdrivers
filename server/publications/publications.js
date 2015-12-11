@@ -2,9 +2,11 @@ Meteor.publish('complaints', function() {
     return Complaints.find();
 });
 
-Meteor.publish('user-complaints', function() {
-    // TODO: return complaints with this userId
-    return Complaints.find();
+Meteor.publish('your-complaints', function(userId) {
+
+    var reporter = "@"+Meteor.users.findOne(userId).services.twitter.screenName;
+
+    return Complaints.find({reporter: reporter});
 });
 
 Meteor.publish('complaint', function(id) {

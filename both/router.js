@@ -30,6 +30,21 @@ Router.map(function() {
         }
     });
 
+        this.route('yourComplaints', {
+        waitOn: function() {
+            Meteor.subscribe('your-complaints', Meteor.userId());
+        },
+        data: function() {
+            return {
+                complaints: Complaints.find({}, {
+                    sort: {
+                        reportedAt: -1
+                    }
+                })
+            };
+        }
+    });
+
     this.route('add', {
         onBeforeAction: function() {
             if (!Meteor.userId()) {

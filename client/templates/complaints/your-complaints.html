@@ -1,9 +1,9 @@
-<template name="complaints">
+<template name="yourComplaints">
   {{#contentFor "headerButtonLeft"}}
     {{>ionNavBackButton path="index"}}
   {{/contentFor}}
   {{#contentFor "headerTitle"}}
-    <h1 class="title">Complaints</h1>
+    <h1 class="title">Your Complaints</h1>
   {{/contentFor}}
   {{#contentFor "headerButtonRight"}}
     <button class="button button-clear" onclick="alert('TODO')">Edit</button>
@@ -17,7 +17,7 @@
 
           {{#ionItem buttonRight=true avatar=true}}
 
-            <img src="http://lorempixel.com/100/100/transport/">
+            <img src="https://randomuser.me/api/portraits/thumb/men/27.jpg">
             <h2>{{numberplate}}</h2>
             <p>
               Reported by <b>{{reporter}}</b> - <em>{{showTimeAgo reportedAt}}</em>
