@@ -1,6 +1,6 @@
 <template name="index">
   {{#contentFor "headerTitle"}}
-    <h1 class="title energized">{{> ionIcon icon="alert-circled" class="energized padding"}}Kak Drivers</h1>
+    <h1 class="title royal">{{> ionIcon icon="alert-circled" class="energized padding"}}Kak Drivers</h1>
   {{/contentFor}}
 
   {{#ionView}}
@@ -10,13 +10,13 @@
         {{#if currentUser}}
 
           {{#ionItem path="complaints" iconLeft=true iconRight=true}}
-            {{> ionIcon icon="ios-list" class="positive"}}
+            {{> ionIcon icon="ios-list" class="energized"}}
             All Complaints
             {{> ionIcon icon="ios-arrow-right"}}
           {{/ionItem}}
 
           {{#ionItem path="yourComplaints" iconLeft=true iconRight=true}}
-            {{> ionIcon icon="ios-person-outline" class="positive"}}
+            {{> ionIcon icon="ios-person-outline" class="energized"}}
             Your Complaints
             {{> ionIcon icon="ios-arrow-right"}}
           {{/ionItem}}
@@ -27,7 +27,7 @@
             {{> ionIcon icon="ios-arrow-right"}}
           {{/ionItem}}
 
-          <button class="button button-block button-positive" onclick="Meteor.logout();">
+          <button class="button button-block button-royal" style="position:fixed; bottom: 0" onclick="Meteor.logout();">
             {{> ionIcon icon="log-out"}}
             Logout
           </button>
@@ -35,7 +35,7 @@
         {{else}}
 
           {{#ionItem path="complaints" iconLeft=true iconRight=true}}
-            {{> ionIcon icon="ios-list" class="positive"}}
+            {{> ionIcon icon="ios-list" class="energized"}}
             All Complaints
             {{> ionIcon icon="ios-arrow-right"}}
           {{/ionItem}}
@@ -53,92 +53,92 @@
 
 
         <!-- {{#ionItem path="actionSheet" iconLeft=true iconRight=true}}
-          {{> ionIcon icon="ios-checkmark" class="positive"}}
+          {{> ionIcon icon="ios-checkmark" class="energized"}}
           Action Sheet
           {{> ionIcon icon="ios-arrow-right"}}
         {{/ionItem}} -->
 
         <!-- {{#ionItem path="backdrop" iconLeft=true iconRight=true}}
-          {{> ionIcon icon="ios-checkmark" class="positive"}}
+          {{> ionIcon icon="ios-checkmark" class="energized"}}
           Backdrop
           {{> ionIcon icon="ios-arrow-right"}}
         {{/ionItem}} -->
 
         <!-- {{#ionItem path="forms" iconLeft=true iconRight=true}}
-          {{> ionIcon icon="ios-checkmark" class="positive"}}
+          {{> ionIcon icon="ios-checkmark" class="energized"}}
           Forms
           {{> ionIcon icon="ios-arrow-right"}}
         {{/ionItem}} -->
 
 
         <!-- {{#ionItem path="headersFooters" iconLeft=true iconRight=true}}
-          {{> ionIcon icon="ios-checkmark" class="positive"}}
+          {{> ionIcon icon="ios-checkmark" class="energized"}}
           Headers &amp; Footers
           {{> ionIcon icon="ios-arrow-right"}}
         {{/ionItem}} -->
 
         <!-- {{#ionItem path="lists" iconLeft=true iconRight=true}}
-          {{> ionIcon icon="ios-checkmark" class="positive"}}
+          {{> ionIcon icon="ios-checkmark" class="energized"}}
           Lists
           {{> ionIcon icon="ios-arrow-right"}}
         {{/ionItem}} -->
 
         <!-- {{#ionItem path="loading" iconLeft=true iconRight=true}}
-          {{> ionIcon icon="ios-checkmark" class="positive"}}
+          {{> ionIcon icon="ios-checkmark" class="energized"}}
           Loading
           {{> ionIcon icon="ios-arrow-right"}}
         {{/ionItem}} -->
 
         <!-- {{#ionItem path="modal" iconLeft=true iconRight=true}}
-          {{> ionIcon icon="ios-checkmark" class="positive"}}
+          {{> ionIcon icon="ios-checkmark" class="energized"}}
           Modal
           {{> ionIcon icon="ios-arrow-right"}}
         {{/ionItem}} -->
 
         <!-- {{#ionItem path="navigation" iconLeft=true iconRight=true}}
-          {{> ionIcon icon="ios-checkmark" class="positive"}}
+          {{> ionIcon icon="ios-checkmark" class="energized"}}
           Navigation
           {{> ionIcon icon="ios-arrow-right"}}
         {{/ionItem}} -->
 
         <!-- {{#ionItem path="popover" iconLeft=true iconRight=true}}
-          {{> ionIcon icon="ios-checkmark" class="positive"}}
+          {{> ionIcon icon="ios-checkmark" class="energized"}}
           Popover
           {{> ionIcon icon="ios-arrow-right"}}
         {{/ionItem}} -->
 
         <!-- {{#ionItem path="popup" iconLeft=true iconRight=true}}
-          {{> ionIcon icon="ios-checkmark" class="positive"}}
+          {{> ionIcon icon="ios-checkmark" class="energized"}}
           Popup
           {{> ionIcon icon="ios-arrow-right"}}
         {{/ionItem}} -->
 
         <!-- {{#ionItem path="sideMenu" iconLeft=true iconRight=true}}
-          {{> ionIcon icon="ios-checkmark" class="positive"}}
+          {{> ionIcon icon="ios-checkmark" class="energized"}}
           Side Menu
           {{> ionIcon icon="ios-arrow-right"}}
         {{/ionItem}} -->
 
         <!-- {{#ionItem path="slideBox" iconLeft=true iconRight=true}}
-          {{> ionIcon icon="ios-checkmark" class="positive"}}
+          {{> ionIcon icon="ios-checkmark" class="energized"}}
           Slide Box
           {{> ionIcon icon="ios-arrow-right"}}
         {{/ionItem}}
  -->
         <!-- {{#ionItem path="spinner" iconLeft=true iconRight=true}}
-          {{> ionIcon icon="ios-checkmark" class="positive"}}
+          {{> ionIcon icon="ios-checkmark" class="energized"}}
           Spinner
           {{> ionIcon icon="ios-arrow-right"}}
         {{/ionItem}} -->
 
         <!-- {{#ionItem path="tabs.one" iconLeft=true iconRight=true}}
-          {{> ionIcon icon="ios-checkmark" class="positive"}}
+          {{> ionIcon icon="ios-checkmark" class="energized"}}
           Tabs
           {{> ionIcon icon="ios-arrow-right"}}
         {{/ionItem}} -->
 
         <!-- {{#ionItem path="userAccounts" iconLeft=true iconRight=true}}
-          {{> ionIcon icon="ios-checkmark" class="positive"}}
+          {{> ionIcon icon="ios-checkmark" class="energized"}}
           User Accounts
           {{> ionIcon icon="ios-arrow-right"}}
         {{/ionItem}} -->

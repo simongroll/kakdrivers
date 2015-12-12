@@ -1,4 +1,23 @@
-$positive: #DE4F4F;
+// $positive: #DE4F4F;
+
+// skygreen: #c3e5e6
+$positive: #c3e5e6;
+// skyblue: #d5eff5
+$calm: #d5eff5;
+// buildingsgrey: #acc1c3
+$stable: #acc1c3;
+// carorange: #e57b23
+$energized: #e57b23;
+// carred: #df4f3b
+$assertive: #df4f3b;
+// windowbluelight: #c3e7f2
+$balanced: #c3e7f2;
+// windowbluedark: #9bd7eb
+// greyroad: #7d7d7d
+$royal: #7d7d7d;
+// greyroadshadow: #8397ac
+$dark: #8397ac;
+
 $loading-font-size: 22px;
 
 @import '.meteor/local/build/programs/server/assets/packages/meteoric_ionic-sass/_ionic';
@@ -36,4 +55,19 @@ $loading-font-size: 22px;
   button {
     top: 16px !important;
   }
+}
+
+// Custom
+
+h1.title {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  border: none;
+  font: normal normal 900 70px/normal "Aldrich", Helvetica, sans-serif;
+  color: $assertive;
+  text-align: center;
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  text-shadow: 0 1px 0 hsl(0, 0%, 0%) , -1px 0 0 hsl(203, 9%, 82%);
 }
