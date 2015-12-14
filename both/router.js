@@ -30,7 +30,7 @@ Router.map(function() {
         }
     });
 
-        this.route('yourComplaints', {
+    this.route('yourComplaints', {
         waitOn: function() {
             Meteor.subscribe('your-complaints', Meteor.userId());
         },
@@ -52,14 +52,14 @@ Router.map(function() {
                 // this.render('login');
                 // return pause();
                 this.next();
-            }
-            else {
-              this.next();
+            } else {
+                this.next();
             }
         },
         waitOn: function() {
             [Accounts.loginServicesConfigured(),
-            Meteor.subscribe("userProfile", Meteor.userId())];
+                Meteor.subscribe("userProfile", Meteor.userId())
+            ];
         }
     });
 
@@ -110,4 +110,32 @@ Router.map(function() {
         layoutTemplate: 'tabsLayout'
     });
     this.route('userAccounts');
+});
+
+// https://atmospherejs.com/lookback/seo
+Router.plugin('seo', {
+    // only: ['someRoute'],
+    // except: ['someOtherRoute'],
+    defaults: {
+        title: 'Kak Drivers', // Will apply to <title>, Twitter and OpenGraph.
+        suffix: 'Report Bad Driving',
+        separator: '·',
+
+        description: 'Report drivers from hell', // Will apply to meta, Twitter and OpenGraph.
+        image: 'http://domain.com/image.png', // Will apply to Twitter and OpenGraph.
+
+        meta: {
+            keywords: ['driving', 'auto', 'complaints']
+        },
+
+        twitter: {
+            card: 'Kakdrivers - report bad driving',
+            creator: '@KakDrivers'
+        },
+
+        og: {
+            site_name: 'Kak Drivers',
+            image: '/images/custom-opengraph.png'
+        }
+    };
 });

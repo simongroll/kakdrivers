@@ -1,4 +1,45 @@
 {
-	"consumerKey": "lorem ipsum",
-	"secret": "lorem ipsum"
+    "consumerKey": "lorem ipsum",
+    "secret": "lorem ipsum",
+
+    "public": {
+        "analyticsSettings": {
+            "Google Analytics": {
+                "trackingId": "Your tracking ID"
+            },
+            "Amplitude": {
+                "apikey": "..."
+            },
+            "Chartbeat": {
+                "uid": "..."
+            },
+            "comScore": {
+                "c2": "..."
+            },
+            "HubSpot": {
+                "portalId": "..."
+            },
+            "Intercom": {
+                "appId": "..."
+            },
+            "Keen IO": {
+                "projectId": "...",
+                "writeKey": "..."
+            },
+            "KISSmetrics": {
+                "apiKey": "..."
+            },
+            "Mixpanel": {
+                "token": "...",
+                "people": true
+            },
+            "Quantcast": {
+                "pCode": "..."
+            },
+            "Segment.io": {
+                "apiKey": "..."
+            }
+        }
+    }
+
 }
