@@ -2,3 +2,4 @@
 .meteor/meteorite
 .build*
 .DS_Store
+dev.json
