@@ -1,6 +1,8 @@
 {
-    "consumerKey": "lorem ipsum",
-    "secret": "lorem ipsum",
+    "consumer_key": "lorem ipsum",
+    "consumer_secret": "lorem ipsum",
+    "access_token":"lorem ipsum",
+    "access_token_secret":"lorem ipsum",
 
     "public": {
         "analyticsSettings": {

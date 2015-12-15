@@ -113,29 +113,31 @@ Router.map(function() {
 });
 
 // https://atmospherejs.com/lookback/seo
-Router.plugin('seo', {
-    // only: ['someRoute'],
-    // except: ['someOtherRoute'],
-    defaults: {
-        title: 'Kak Drivers', // Will apply to <title>, Twitter and OpenGraph.
-        suffix: 'Report Bad Driving',
-        separator: '·',
+if (Meteor.isClient) {
+    Router.plugin('seo', {
+        // only: ['someRoute'],
+        // except: ['someOtherRoute'],
+        defaults: {
+            title: 'Kak Drivers', // Will apply to <title>, Twitter and OpenGraph.
+            suffix: 'Report Bad Driving',
+            separator: '·',
 
-        description: 'Report drivers from hell', // Will apply to meta, Twitter and OpenGraph.
-        image: 'http://domain.com/image.png', // Will apply to Twitter and OpenGraph.
+            description: 'Report drivers from hell', // Will apply to meta, Twitter and OpenGraph.
+            image: 'http://domain.com/image.png', // Will apply to Twitter and OpenGraph.
 
-        meta: {
-            keywords: ['driving', 'auto', 'complaints']
-        },
+            meta: {
+                keywords: ['driving', 'auto', 'complaints']
+            },
 
-        twitter: {
-            card: 'Kakdrivers - report bad driving',
-            creator: '@KakDrivers'
-        },
+            twitter: {
+                card: 'Kakdrivers - report bad driving',
+                creator: '@KakDrivers'
+            },
 
-        og: {
-            site_name: 'Kak Drivers',
-            image: '/images/custom-opengraph.png'
+            og: {
+                site_name: 'Kak Drivers',
+                image: '/images/custom-opengraph.png'
+            }
         }
-    };
-});
+    });
+}
